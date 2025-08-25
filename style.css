@@ -1,0 +1,11 @@
+span{
+    color: red;
+}
+
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: rgb(65, 163, 199);
+}
