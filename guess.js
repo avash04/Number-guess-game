@@ -10,7 +10,7 @@ const max = 100;
 let answer = Math.floor(Math.random() * (max - min + 1)) + min;
 
 submit1.onclick = function() {
-    if (!running) return;
+    if (!running) return; // stop the game if already won
 
     let userGuess = Number(guess.value);
     attempt++;
@@ -24,8 +24,8 @@ submit1.onclick = function() {
     } else if (userGuess > answer) {
         alertMessage.textContent = `Hint: Guess lower number`;
     } else {
-        alertMessage.textContent = `You guessed it right! It took you ${attempt} attempts`;
-        running = false;
+        alertMessage.textContent = `🎉 You guessed it right! It took you ${attempt} attempts.`;
+        running = false; // stop game
     }
 
     guess.value = ""; // clears input for next guess
